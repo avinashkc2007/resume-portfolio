@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- FontAwesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <script>
     tailwind.config = {
@@ -38,7 +37,6 @@
 </head>
 <body class="bg-background text-foreground min-h-screen">
   
-  <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" class="text-lg font-semibold text-foreground">Avinash<span class="text-accent">.KC</span></a>
@@ -55,7 +53,6 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <header class="min-h-screen flex items-center pt-20">
     <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
       <div>
@@ -77,7 +74,6 @@
             Contact Me
           </a>
         </div>
-        <!-- Social Links -->
         <div class="flex items-center gap-6 mt-12">
           <a href="https://github.com/avinashkc2007" target="_blank" class="text-muted hover:text-accent transition-colors" aria-label="GitHub">
             <i class="fab fa-github text-2xl"></i>
@@ -90,33 +86,29 @@
           </a>
         </div>
       </div>
-     <!-- Profile Image -->
-<div class="hidden lg:flex justify-center">
-  <div class="relative w-80 h-80 rounded-full bg-accent/10 flex items-center justify-center">
-    <div class="w-60 h-60 rounded-full overflow-hidden border-4 border-accent">
-      <img
-        src="./profile.jpg"
-        alt="Avinash K.C."
-        class="w-full h-full object-cover rounded-full"
-      />
-    </div>
-  </div>
-</div>
 
-
-            </div>
+      <div class="hidden lg:flex justify-center relative">
+        <div class="relative w-80 h-80 rounded-full bg-accent/10 flex items-center justify-center">
+          <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-accent shadow-2xl shadow-accent/20 z-10">
+            <img
+              src="./profile.jpg"
+              onerror="this.src='https://ui-avatars.com/api/?name=Avinash+KC&background=22d3ee&color=0f172a&size=256&font-size=0.35'"
+              alt="Avinash K.C."
+              class="w-full h-full object-cover"
+            />
           </div>
-          <!-- Badge -->
-          <div class="absolute -top-4 -right-4 w-24 h-24 bg-card rounded-2xl flex flex-col items-center justify-center border border-border shadow-xl">
+          <div class="absolute inset-0 bg-accent/20 rounded-full blur-3xl -z-10 transform scale-90"></div>
+        </div>
+
+        <div class="absolute top-0 right-10 w-24 h-24 bg-card rounded-2xl flex flex-col items-center justify-center border border-border shadow-xl z-20 animate-bounce" style="animation-duration: 3s;">
              <i class="fas fa-university text-accent text-2xl mb-1"></i>
             <span class="text-xs text-muted font-medium text-center px-1">Engineering<br>Student</span>
-          </div>
         </div>
       </div>
+
     </div>
   </header>
 
-  <!-- About Section -->
   <section id="about" class="py-24 bg-card/30">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid lg:grid-cols-3 gap-12">
@@ -139,7 +131,6 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -148,7 +139,6 @@
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         
-        <!-- C Language -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-code text-accent text-xl"></i>
@@ -156,7 +146,6 @@
           <h3 class="text-foreground font-medium">C Language</h3>
         </div>
 
-        <!-- C++ -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-laptop-code text-accent text-xl"></i>
@@ -164,7 +153,6 @@
           <h3 class="text-foreground font-medium">C++</h3>
         </div>
 
-        <!-- Python -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fab fa-python text-accent text-2xl"></i>
@@ -173,7 +161,6 @@
           <p class="text-xs text-muted mt-1">Beginner</p>
         </div>
 
-        <!-- HTML -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fab fa-html5 text-accent text-2xl"></i>
@@ -181,7 +168,6 @@
           <h3 class="text-foreground font-medium">HTML</h3>
         </div>
 
-        <!-- VLSI Design -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-microchip text-accent text-xl"></i>
@@ -189,7 +175,6 @@
           <h3 class="text-foreground font-medium">VLSI Design</h3>
         </div>
 
-        <!-- Embedded Systems -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-memory text-accent text-xl"></i>
@@ -197,7 +182,6 @@
           <h3 class="text-foreground font-medium">Embedded Systems</h3>
         </div>
 
-        <!-- Circuit Design -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-wave-square text-accent text-xl"></i>
@@ -205,7 +189,6 @@
           <h3 class="text-foreground font-medium">Analog Circuits</h3>
         </div>
 
-        <!-- Leadership (Soft Skill) -->
         <div class="skill-card bg-card border border-border rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/50">
           <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-users text-accent text-xl"></i>
@@ -217,7 +200,6 @@
     </div>
   </section>
 
-  <!-- Education Section -->
   <section id="education" class="py-24 bg-card/30">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -226,7 +208,6 @@
       </div>
       <div class="grid md:grid-cols-2 gap-8">
         
-        <!-- College -->
         <div class="bg-card border border-border rounded-2xl p-8">
           <div class="flex items-start justify-between mb-4">
             <div>
@@ -245,7 +226,6 @@
           </p>
         </div>
 
-        <!-- PU College -->
         <div class="bg-card border border-border rounded-2xl p-8">
           <div class="flex items-start justify-between mb-4">
             <div>
@@ -268,7 +248,6 @@
     </div>
   </section>
 
-  <!-- Highlights / Certifications Section (Replaces Projects) -->
   <section id="highlights" class="py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -277,7 +256,6 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Item 1 -->
         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-blue-900 to-slate-800 flex items-center justify-center">
              <i class="fab fa-microsoft text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
@@ -294,7 +272,6 @@
           </div>
         </article>
 
-        <!-- Item 2 -->
         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-purple-900 to-slate-800 flex items-center justify-center">
              <i class="fas fa-robot text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
@@ -311,7 +288,6 @@
           </div>
         </article>
 
-        <!-- Item 3 -->
         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-cyan-900 to-slate-800 flex items-center justify-center">
              <i class="fas fa-palette text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
@@ -328,8 +304,7 @@
           </div>
         </article>
 
-         <!-- Item 4 -->
-        <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
+         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-emerald-900 to-slate-800 flex items-center justify-center">
              <i class="fas fa-microchip text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
           </div>
@@ -345,7 +320,6 @@
           </div>
         </article>
         
-        <!-- Item 5 -->
         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-indigo-900 to-slate-800 flex items-center justify-center">
              <i class="fas fa-users text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
@@ -362,7 +336,6 @@
           </div>
         </article>
         
-        <!-- Item 6 -->
         <article class="project-card group bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
           <div class="h-32 bg-gradient-to-br from-pink-900 to-slate-800 flex items-center justify-center">
              <i class="fas fa-pencil-ruler text-5xl text-white/20 group-hover:text-accent transition-colors"></i>
@@ -383,7 +356,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="py-24 bg-card/30">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -448,7 +420,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-8 border-t border-border">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-muted text-sm">© <script>document.write(new Date().getFullYear())</script> Avinash K.C. All rights reserved.</p>
